@@ -37,6 +37,7 @@ import React from "react";
 const HeroSection: React.FC = () => {
   return (
     <section
+      id="accueil"
       className="relative bg-cover bg-center h-screen"
       style={{
         backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #001A40), url('/Hero.jpg')",

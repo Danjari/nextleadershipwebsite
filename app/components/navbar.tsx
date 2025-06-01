@@ -9,10 +9,10 @@ import Script from 'next/script';
 
 
 const navigation = [
-    { name: 'Accueil', href: '#home' },
+    { name: 'Accueil', href: '#accueil' },
     { name: 'Programmes', href: '#programmes' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'A propos', href: '#aboutus' },
+    // { name: 'Blog', href: '#blog' },
+    { name: 'A propos', href: '#apropos' },
   ]
 
 const NavBar = () => {
@@ -25,8 +25,8 @@ const NavBar = () => {
           <div className="flex lg:flex-1">
             <a href="#home" className="-m-1.5 p-1.5 flex items-center gap-2">
               <span className="sr-only">Next Leadership</span>
-              <Image src="/logo.svg" alt="logo" className="h-10 w-auto" width={100} height={100} />
-              <span className="text-2xl font-bold text-indigo-600">Next Leadership</span>
+              <Image src="/logo.png" alt="logo" className="h-10 w-auto" width={200} height={200} />
+              <span className="text-2xl font-bold text-[#001A40]">Next Leadership</span>
             </a>
           </div>
           <div className="flex md:hidden">

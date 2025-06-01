@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutUsSection: React.FC = () => {
   return (
-    <section className="bg-[#001A40] py-16 px-4 text-white text-center">
+    <section  id="apropos" className="bg-[#001A40] py-16 px-4 text-white text-center">
       <div className="max-w-4xl mx-auto space-y-8">
       <h2 className="text-base font-semibold leading-7 text-[#FFC72C]">About Next Leadership</h2>
           <p className="mt-2 text-3xl font-inter font-bold tracking-tight text-white sm:text-4xl">

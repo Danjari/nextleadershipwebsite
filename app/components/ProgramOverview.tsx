@@ -22,7 +22,7 @@ const programs = [
 
 const ProgramsOverviewSection: React.FC = () => {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-b from-[#001A40] to-[#0A285F] py-24 sm:py-32">
+    <section id="programmes" className="relative isolate overflow-hidden bg-gradient-to-b from-[#001A40] to-[#0A285F] py-24 sm:py-32">
       {/* Gradient Overlays */}
       <div
         aria-hidden="true"
