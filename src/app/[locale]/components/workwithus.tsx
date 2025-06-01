@@ -1,21 +1,23 @@
-
+import { useTranslations } from 'next-intl';
 import React from "react";
 
-const links = [
-  { name: 'About us', href: '#' },
-  { name: 'Want to join Our Team?', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' },
-];
+const WorkWithUsSection: React.FC = () => {
+  const t = useTranslations('workWithUs'); // Use 'workWithUs' to access the dictionary
 
-const stats = [
-  { name: 'Programs Organized', value: '5' },
-  { name: 'Yearly Applicants', value: '1800' },
-  { name: 'Accepted', value: '65' },
-  { name: 'Conferences', value: '2' },
-];
+  const links = [
+    { name: t('linkAbout'), href: '#' },
+    { name: t('linkTeam'), href: '#' },
+    { name: t('linkValues'), href: '#' },
+    { name: t('linkMeet'), href: '#' },
+  ];
 
-const AboutUsSection: React.FC = () => {
+  const stats = [
+    { name: t('linkProgram'), value: '5' },
+    { name: t('linkApplicants'), value: '1800' },
+    { name: t('linkAccepted'), value: '65' },
+    { name: t('linkConferences'), value: '2' },
+  ];
+
   return (
     <div className="relative isolate overflow-hidden bg-[#001A40] py-24 sm:py-32">
       {/* Gradient Overlays */}
@@ -48,9 +50,11 @@ const AboutUsSection: React.FC = () => {
       {/* Main Content */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-din font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+          <h2 className="text-4xl font-din font-bold tracking-tight text-white sm:text-6xl">
+            {t('title')}
+          </h2>
           <p className="mt-6 text-lg font-inter leading-8 text-white">
-            We empower young leaders with the skills to lead, innovate, and make a difference. Join us to shape the future.
+          {t('description')}
           </p>
         </div>
 
@@ -79,4 +83,4 @@ const AboutUsSection: React.FC = () => {
   );
 };
 
-export default AboutUsSection;
+export default WorkWithUsSection;
